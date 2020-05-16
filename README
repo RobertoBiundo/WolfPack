@@ -1,0 +1,16 @@
+The following considerations were made
+- A wolf can be in many packs and a pack can therefore be in many groups.
+This is done since the spirit of the project is to organize the employees in teams. It is therefore imagined that an employee can be in many teams. In a real case the customer would be consulted beforehand.
+- Names and LastNames can be expressed with UTF-8 characters. Could not be the case for employees of other cultures (example Japan)
+- A limit of time was kept to 4h based on the original conversation with the WolfPack team and a basic architecture was created based on the timeframe and requirements. Job Started at 7.45 and ended at 11.20
+- No bulk operations were provided on the API since the assumption of 35-100 employees seems manageable without them. This would also be consulted with the client beforehand.
+
+
+Recommendations
+- Include authentication using Identity
+- Improve validation error messages to simplify the default ones from Fluent Validation
+- Improvements to the architecture could be made to separate the data layers and service layers better using a Data Store pattern.
+
+Notes: 
+- Find in the project an export of Postman in json format that can be imported for V2.1+ format supported Postmans
+

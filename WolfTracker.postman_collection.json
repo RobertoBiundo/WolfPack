@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "8f49bfa3-1829-41c3-bcd8-2424bfb799a4",
+		"name": "WolfTracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Wolf",
+			"item": [
+				{
+					"name": "Get All Wolfs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/wolf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"wolf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Wolf",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"FirstName\": \"James\",\n\t\"LastName\": \"Howlett\",\n\t\"Gender\": 1,\n\t\"BirthDate\": \"1987-11-18\",\n\t\"Latitude\": 52.379189,\n\t\"Longitude\": 4.899431\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/wolf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"wolf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Wolf",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"FirstName\": \"James2\",\n\t\"LastName\": \"Howlett\",\n\t\"Gender\": 1,\n\t\"BirthDate\": \"1987-11-18\",\n\t\"Latitude\": 52.379189,\n\t\"Longitude\": 4.899431\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/wolf/6dbefdb6-67e9-4393-0f1e-08d7f9716c8e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"wolf",
+								"6dbefdb6-67e9-4393-0f1e-08d7f9716c8e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Wolf",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/wolf/081fccef-c253-4067-bafd-08d7f96b2d20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"wolf",
+								"081fccef-c253-4067-bafd-08d7f96b2d20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Packs for Wolf",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/wolf/4b7962c8-016f-4cb3-e3cc-08d7f9784a80/packs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"wolf",
+								"4b7962c8-016f-4cb3-e3cc-08d7f9784a80",
+								"packs"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Pack",
+			"item": [
+				{
+					"name": "Get All Packs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/pack",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"pack"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Pack",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Pack 1\",\n\t\"Description\": \"A nice description\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/pack",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"pack"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Pack",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Pack 1.1\",\n\t\"Description\": \"A nice description edited\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/pack/df2d9de7-3127-4637-b744-08d7f973b4d4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"pack",
+								"df2d9de7-3127-4637-b744-08d7f973b4d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Pack",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/pack/df2d9de7-3127-4637-b744-08d7f973b4d4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"pack",
+								"df2d9de7-3127-4637-b744-08d7f973b4d4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "WolfPack",
+			"item": [
+				{
+					"name": "Add Wolf to Pack",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"WolfId\": \"6dbefdb6-67e9-4393-0f1e-08d7f9716c8e\",\n\t\"PackId\": \"c318f9c5-1e77-439d-be6f-08d7f978035e\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/wolfpack",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"wolfpack"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Wolf from Pack",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"WolfId\": \"6dbefdb6-67e9-4393-0f1e-08d7f9716c8e\",\n\t\"PackId\": \"c318f9c5-1e77-439d-be6f-08d7f978035e\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/wolfpack",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"wolfpack"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
